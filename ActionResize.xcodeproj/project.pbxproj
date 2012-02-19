@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		03530AC814F098F1002E9A5E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03530AC714F098F1002E9A5E /* Cocoa.framework */; };
 		03530AD214F098F1002E9A5E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03530AD014F098F1002E9A5E /* InfoPlist.strings */; };
+		03530BEC14F09CBB002E9A5E /* ActionResize.m in Sources */ = {isa = PBXBuildFile; fileRef = 03530BEB14F09CBB002E9A5E /* ActionResize.m */; };
+		03530BEE14F09CE3002E9A5E /* RSTrixiePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03530BED14F09CE3002E9A5E /* RSTrixiePlugin.framework */; };
+		03530BF014F09CED002E9A5E /* ActionResize.h in Headers */ = {isa = PBXBuildFile; fileRef = 03530BEA14F09CBB002E9A5E /* ActionResize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03530C2E14F0A25C002E9A5E /* ActionResize.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03530C2D14F0A25C002E9A5E /* ActionResize.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,9 +21,13 @@
 		03530ACA14F098F1002E9A5E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		03530ACB14F098F1002E9A5E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		03530ACC14F098F1002E9A5E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		03530ACF14F098F1002E9A5E /* ActionResize-Info.plist */ = {isa = PBXFileReference; path = "ActionResize-Info.plist"; sourceTree = "<group>"; };
+		03530ACF14F098F1002E9A5E /* ActionResize-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ActionResize-Info.plist"; sourceTree = "<group>"; };
 		03530AD114F098F1002E9A5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		03530AD314F098F1002E9A5E /* ActionResize-Prefix.pch */ = {isa = PBXFileReference; path = "ActionResize-Prefix.pch"; sourceTree = "<group>"; };
+		03530AD314F098F1002E9A5E /* ActionResize-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActionResize-Prefix.pch"; sourceTree = "<group>"; };
+		03530BEA14F09CBB002E9A5E /* ActionResize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionResize.h; sourceTree = "<group>"; };
+		03530BEB14F09CBB002E9A5E /* ActionResize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionResize.m; sourceTree = "<group>"; };
+		03530BED14F09CE3002E9A5E /* RSTrixiePlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RSTrixiePlugin.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug/RSTrixiePlugin.framework"; sourceTree = "<group>"; };
+		03530C2D14F0A25C002E9A5E /* ActionResize.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionResize.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03530BEE14F09CE3002E9A5E /* RSTrixiePlugin.framework in Frameworks */,
 				03530AC814F098F1002E9A5E /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,6 +63,7 @@
 		03530AC614F098F1002E9A5E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03530BED14F09CE3002E9A5E /* RSTrixiePlugin.framework */,
 				03530AC714F098F1002E9A5E /* Cocoa.framework */,
 				03530AC914F098F1002E9A5E /* Other Frameworks */,
 			);
@@ -74,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				03530ACE14F098F1002E9A5E /* Supporting Files */,
+				03530BEA14F09CBB002E9A5E /* ActionResize.h */,
+				03530BEB14F09CBB002E9A5E /* ActionResize.m */,
+				03530C2D14F0A25C002E9A5E /* ActionResize.xib */,
 			);
 			path = ActionResize;
 			sourceTree = "<group>";
@@ -90,6 +103,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		03530BEF14F09CE8002E9A5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03530BF014F09CED002E9A5E /* ActionResize.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		03530AC314F098F1002E9A5E /* ActionResize */ = {
 			isa = PBXNativeTarget;
@@ -98,6 +122,7 @@
 				03530AC014F098F1002E9A5E /* Sources */,
 				03530AC114F098F1002E9A5E /* Frameworks */,
 				03530AC214F098F1002E9A5E /* Resources */,
+				03530BEF14F09CE8002E9A5E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -140,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03530AD214F098F1002E9A5E /* InfoPlist.strings in Resources */,
+				03530C2E14F0A25C002E9A5E /* ActionResize.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03530BEC14F09CBB002E9A5E /* ActionResize.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,10 +244,15 @@
 		03530AD714F098F1002E9A5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionResize/ActionResize-Prefix.pch";
 				INFOPLIST_FILE = "ActionResize/ActionResize-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -229,10 +261,15 @@
 		03530AD814F098F1002E9A5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Code/Workspaces/Trixie/RSTrixiePlugin/RSTrixiePlugin",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/Workspace_Trixie-axnfrbtrkoszpiehooyethumxqxg/Build/Products/Debug\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionResize/ActionResize-Prefix.pch";
 				INFOPLIST_FILE = "ActionResize/ActionResize-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "@executable_path/../Plugins";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = bundle;
 			};
