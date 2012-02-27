@@ -14,13 +14,14 @@
 	
     if( nil != (self = [super initWithNibName:nibNameOrNil	bundle:nibBundleOrNil]))
     {
-		[self setName: @"Resize"];
+		[self setPluginName: @"Resize"];
     }
     return self;
 }
 
-- (BOOL) hasSelectorField {
-	return NO;
-}
+
+- (BOOL) hasSelectorField { 
+	return NO; 
+} 
 
 @end

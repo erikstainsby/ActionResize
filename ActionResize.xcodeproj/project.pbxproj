@@ -47,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				03530ACD14F098F1002E9A5E /* ActionResize */,
+				03530ACE14F098F1002E9A5E /* Supporting Files */,
 				03530AC614F098F1002E9A5E /* Frameworks */,
 				03530AC514F098F1002E9A5E /* Products */,
 			);
@@ -83,7 +84,6 @@
 		03530ACD14F098F1002E9A5E /* ActionResize */ = {
 			isa = PBXGroup;
 			children = (
-				03530ACE14F098F1002E9A5E /* Supporting Files */,
 				03530BEA14F09CBB002E9A5E /* ActionResize.h */,
 				03530BEB14F09CBB002E9A5E /* ActionResize.m */,
 				03530C2D14F0A25C002E9A5E /* ActionResize.xib */,
@@ -99,6 +99,7 @@
 				03530AD314F098F1002E9A5E /* ActionResize-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = ActionResize;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +295,7 @@
 				03530AD814F098F1002E9A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
